@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		082E74FE20502E2000DCD9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E74FD20502E2000DCD9B1 /* AppDelegate.swift */; };
-		082E750020502E2000DCD9B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E74FF20502E2000DCD9B1 /* ViewController.swift */; };
 		082E750320502E2000DCD9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E750120502E2000DCD9B1 /* Main.storyboard */; };
 		082E750520502E2000DCD9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082E750420502E2000DCD9B1 /* Assets.xcassets */; };
 		082E750820502E2000DCD9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E750620502E2000DCD9B1 /* LaunchScreen.storyboard */; };
+		082E751420502E7D00DCD9B1 /* MeteoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E751320502E7D00DCD9B1 /* MeteoController.swift */; };
+		082E751620502F4F00DCD9B1 /* LocalisationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E751520502F4F00DCD9B1 /* LocalisationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		082E74FA20502E2000DCD9B1 /* CodabeeMeteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodabeeMeteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		082E74FD20502E2000DCD9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		082E74FF20502E2000DCD9B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		082E750220502E2000DCD9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		082E750420502E2000DCD9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		082E750720502E2000DCD9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		082E750920502E2000DCD9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082E751320502E7D00DCD9B1 /* MeteoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoController.swift; sourceTree = "<group>"; };
+		082E751520502F4F00DCD9B1 /* LocalisationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalisationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		082E74FC20502E2000DCD9B1 /* CodabeeMeteo */ = {
 			isa = PBXGroup;
 			children = (
+				082E751120502E4A00DCD9B1 /* Model */,
+				082E751020502E4500DCD9B1 /* View */,
+				082E750F20502E3E00DCD9B1 /* Controller */,
 				082E74FD20502E2000DCD9B1 /* AppDelegate.swift */,
-				082E74FF20502E2000DCD9B1 /* ViewController.swift */,
-				082E750120502E2000DCD9B1 /* Main.storyboard */,
 				082E750420502E2000DCD9B1 /* Assets.xcassets */,
-				082E750620502E2000DCD9B1 /* LaunchScreen.storyboard */,
+				082E751220502E5100DCD9B1 /* Storyboards */,
 				082E750920502E2000DCD9B1 /* Info.plist */,
 			);
 			path = CodabeeMeteo;
+			sourceTree = "<group>";
+		};
+		082E750F20502E3E00DCD9B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				082E751320502E7D00DCD9B1 /* MeteoController.swift */,
+				082E751520502F4F00DCD9B1 /* LocalisationExtension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		082E751020502E4500DCD9B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		082E751120502E4A00DCD9B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		082E751220502E5100DCD9B1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				082E750120502E2000DCD9B1 /* Main.storyboard */,
+				082E750620502E2000DCD9B1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082E750020502E2000DCD9B1 /* ViewController.swift in Sources */,
+				082E751620502F4F00DCD9B1 /* LocalisationExtension.swift in Sources */,
+				082E751420502E7D00DCD9B1 /* MeteoController.swift in Sources */,
 				082E74FE20502E2000DCD9B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
