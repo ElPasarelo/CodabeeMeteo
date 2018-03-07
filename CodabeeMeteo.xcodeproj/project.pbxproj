@@ -17,6 +17,9 @@
 		082E751B20503FFA00DCD9B1 /* Prevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E751A20503FFA00DCD9B1 /* Prevision.swift */; };
 		082E751D2050468100DCD9B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E751C2050468100DCD9B1 /* Extensions.swift */; };
 		082E751F205047A800DCD9B1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E751E205047A800DCD9B1 /* ImageDownloader.swift */; };
+		082E75212050497600DCD9B1 /* PrevisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E75202050497600DCD9B1 /* PrevisionCell.swift */; };
+		082E752320504A4F00DCD9B1 /* DonneeUniqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E752220504A4F00DCD9B1 /* DonneeUniqueCell.swift */; };
+		082E752520504BB000DCD9B1 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E752420504BB000DCD9B1 /* TableViewExtension.swift */; };
 		31A629F81E7CFA3CD8EA3147 /* Pods_CodabeeMeteo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C364AE850B6F4FDC60A233C9 /* Pods_CodabeeMeteo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		082E751A20503FFA00DCD9B1 /* Prevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevision.swift; sourceTree = "<group>"; };
 		082E751C2050468100DCD9B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		082E751E205047A800DCD9B1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		082E75202050497600DCD9B1 /* PrevisionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionCell.swift; sourceTree = "<group>"; };
+		082E752220504A4F00DCD9B1 /* DonneeUniqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonneeUniqueCell.swift; sourceTree = "<group>"; };
+		082E752420504BB000DCD9B1 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		22396D9E6DBAD7C7D81AD851 /* Pods-CodabeeMeteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.release.xcconfig"; sourceTree = "<group>"; };
 		C364AE850B6F4FDC60A233C9 /* Pods_CodabeeMeteo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodabeeMeteo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C663253E7F0E6C571DD1E824 /* Pods-CodabeeMeteo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 			children = (
 				082E751320502E7D00DCD9B1 /* MeteoController.swift */,
 				082E751520502F4F00DCD9B1 /* LocalisationExtension.swift */,
+				082E752420504BB000DCD9B1 /* TableViewExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,6 +102,8 @@
 		082E751020502E4500DCD9B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				082E75202050497600DCD9B1 /* PrevisionCell.swift */,
+				082E752220504A4F00DCD9B1 /* DonneeUniqueCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,12 +282,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				082E751620502F4F00DCD9B1 /* LocalisationExtension.swift in Sources */,
+				082E752320504A4F00DCD9B1 /* DonneeUniqueCell.swift in Sources */,
 				082E751D2050468100DCD9B1 /* Extensions.swift in Sources */,
 				082E751F205047A800DCD9B1 /* ImageDownloader.swift in Sources */,
 				082E751420502E7D00DCD9B1 /* MeteoController.swift in Sources */,
 				082E751B20503FFA00DCD9B1 /* Prevision.swift in Sources */,
+				082E75212050497600DCD9B1 /* PrevisionCell.swift in Sources */,
 				082E75192050340E00DCD9B1 /* API.swift in Sources */,
 				082E74FE20502E2000DCD9B1 /* AppDelegate.swift in Sources */,
+				082E752520504BB000DCD9B1 /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
