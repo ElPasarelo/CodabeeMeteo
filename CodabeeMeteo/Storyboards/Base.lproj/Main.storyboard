@@ -136,6 +136,41 @@
                                             <outlet property="collectionView" destination="9o0-IF-Wk0" id="OcW-4M-zkp"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JourCell" rowHeight="101" id="fEc-Mz-Mhf" customClass="JourCell" customModule="CodabeeMeteo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="188" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fEc-Mz-Mhf" id="caI-Ch-rOo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OaX-J4-i9j">
+                                                    <rect key="frame" x="8" y="10" width="80" height="80.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="erd-Bi-pMy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nz-9e-qad">
+                                                    <rect key="frame" x="96" y="11" width="264" height="79"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8nz-9e-qad" firstAttribute="trailing" secondItem="caI-Ch-rOo" secondAttribute="trailingMargin" id="0uv-8U-UZQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="OaX-J4-i9j" secondAttribute="bottom" constant="10" id="5Pu-si-U7F"/>
+                                                <constraint firstItem="OaX-J4-i9j" firstAttribute="leading" secondItem="caI-Ch-rOo" secondAttribute="leading" constant="8" id="8cD-xS-wCo"/>
+                                                <constraint firstItem="8nz-9e-qad" firstAttribute="bottom" secondItem="caI-Ch-rOo" secondAttribute="bottomMargin" id="Bih-FX-YU7"/>
+                                                <constraint firstItem="OaX-J4-i9j" firstAttribute="top" secondItem="caI-Ch-rOo" secondAttribute="top" constant="10" id="JEQ-h4-mMb"/>
+                                                <constraint firstItem="8nz-9e-qad" firstAttribute="leading" secondItem="OaX-J4-i9j" secondAttribute="trailing" constant="8" id="TTh-UZ-tVr"/>
+                                                <constraint firstItem="8nz-9e-qad" firstAttribute="top" secondItem="caI-Ch-rOo" secondAttribute="topMargin" id="W89-ou-Ma2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="icone" destination="OaX-J4-i9j" id="CLU-Iy-kNA"/>
+                                            <outlet property="texte" destination="8nz-9e-qad" id="Peg-4D-Dio"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
