@@ -76,6 +76,7 @@ class MeteoController: UIViewController {
             let tempsActuel = previsions[0]
             temperatureLabel.text = tempsActuel.temperature.convertirEnIntString()
             decTempsActuel.text = tempsActuel.desc
+            ImageDownloader.obtenir.imageDepuis(tempsActuel.icone, imageView: iconeTempsActuel)
         }
     }
     
